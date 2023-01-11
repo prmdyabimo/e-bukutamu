@@ -49,6 +49,7 @@
   <script src="<?= base_url(); ?>/js/navbar-sticky.js"></script>
   <script src="<?= base_url(); ?>/js/sidebar-burger.js"></script>
   <script src="<?= base_url(); ?>/js/perfect-scrollbar.js"></script>
+  <script src="<?= base_url(); ?>/js/script.js"></script>
 
   <!-- aos scripts -->
   <script src="https://unpkg.com/aos@next/dist/aos.js"></script>

@@ -5,7 +5,12 @@
 <div class="flex flex-wrap mx-3 w-[100%]">
   <div class="w-[100%] h-full px-2 mb-6 xl:mb-0">
     <div class="w-[100%]">
-
+      <!-- alert -->
+      <?php if (session()->getFlashdata('success')) : ?>
+        <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+          <span class="block sm:inline"><?= session()->getFlashdata('success'); ?></span>
+        </div>
+      <?php endif; ?>
       <div class="flex flex-col">
         <div class="overflow-x-auto sm:-mx-6 lg:-mx-8">
           <div class="py-4 inline-block min-w-full sm:px-6 lg:px-8">
@@ -26,10 +31,10 @@
                       Nomor Identitas
                     </th>
                     <th scope="col" class="text-sm font-medium text-white px-6 py-4">
-                      Alamat 
+                      Alamat
                     </th>
                     <th scope="col" class="text-sm font-medium text-white px-6 py-4">
-                      Keperluan 
+                      Keperluan
                     </th>
                     <th scope="col" class="text-sm font-medium text-white px-6 py-4">
                       Tanggal Kunjungan
@@ -69,7 +74,7 @@
                         <img class="w-[100px]" src="<?= base_url('/upload/' . $value['foto'] . ''); ?>" alt="<?= $value['foto']; ?>">
                       </td>
                       <td class="text-sm text-blue-800 font-light px-6 py-4 whitespace-nowrap">
-                        <a href="<?= base_url(); ?>/admin/edittamu/<?= $value['id_tamu']; ?>">Edit</a>
+                        <a href="<?= base_url(); ?>/admin/hapustamu/delete/<?= $value['id_tamu']; ?>" onclick="return confirm('apakah anda yakin')">Hapus</a>
                       </td>
                     </tr>
                   <?php endforeach; ?>

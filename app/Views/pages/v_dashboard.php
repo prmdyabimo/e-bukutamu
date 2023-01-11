@@ -2,7 +2,15 @@
 
 <?= $this->section('content'); ?>
 
+<!-- alert -->
+<?php if (session()->getFlashdata('success')) : ?>
+  <div class="bg-green-100 border border-green-400 text-green-700 px-4 py-3 rounded relative" role="alert">
+    <span class="block sm:inline"><?= session()->getFlashdata('success'); ?></span>
+  </div>
+<?php endif; ?>
+
 <div class="flex flex-wrap -mx-3">
+
   <!-- card1 -->
   <div data-aos="flip-left" data-aos-duration="1000" class="w-full max-w-full h-[80vh] px-3 mb-6 sm:w-1/2 sm:flex-none xl:mb-0 xl:w-1/4">
     <div class="relative flex flex-col min-w-0 break-words bg-white shadow-soft-xl rounded-2xl bg-clip-border">

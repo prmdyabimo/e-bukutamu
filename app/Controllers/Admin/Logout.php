@@ -10,7 +10,6 @@ class Logout extends BaseController
   {
     $session = session();
     $session->destroy();
-    $session->setFlashdata('success', 'Anda berhasil logout');
     return redirect()->to('/admin/login');
   }
 }
