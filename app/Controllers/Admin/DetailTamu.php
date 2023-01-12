@@ -16,11 +16,16 @@ class DetailTamu extends BaseController
 
     public function index()
     {
+        $currentPage = $this->request->getVar('page_tamu') ? $this->request->getVar('page_tamu') : 1;
+
+
         $session = session();
         $data = [
             'title' => 'Detail Tamu',
-            'tamu' => $this->tamuModel->findAll(),
-            'nama_admin' => $session->get('nama_admin')
+            'tamu' => $this->tamuModel->paginate(5, 'tamu'),
+            'pager' => $this->tamuModel->pager,
+            'nama_admin' => $session->get('nama_admin'),
+            'currentPage' => $currentPage
         ];
         return view('pages/v_detailtamu', $data);
     }

@@ -40,6 +40,10 @@ class Tamu extends Migration
             'foto' => [
                 'type' => 'VARCHAR',
                 'constraint' => 255
+            ],
+            'status' => [
+                'type' => 'VARCHAR',
+                'constraint' => 255
             ]
         ]);
         $this->forge->addKey('id_tamu', true);

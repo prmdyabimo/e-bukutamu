@@ -50,7 +50,7 @@
                     <img src="./assets/img/team-2.jpg" class="inline-flex items-center justify-center mr-4 text-white text-sm h-9 w-9 max-w-none rounded-xl" />
                   </div>
                   <div class="flex flex-col justify-center">
-                    <h6 class="mb-1 font-normal leading-normal text-sm"><span class="font-semibold">New message</span> from Laur</h6>
+                    <h6 class="mb-1 font-normal leading-normal text-sm"><span class="font-semibold">Tamu berhasil ditambahkan</span></h6>
                     <p class="mb-0 leading-tight text-xs text-slate-400">
                       <i class="mr-1 fa fa-clock"></i>
                       13 minutes ago
@@ -65,4 +65,4 @@
     </div>
   </div>
 </nav>
-<!-- end Navbar -->
+<!-- end Navbar -->

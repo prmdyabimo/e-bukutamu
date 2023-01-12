@@ -38,6 +38,8 @@ $routes->setAutoRoute(true);
 // route since we don't have to scan directories.
 $routes->get('/', 'Admin\Register::index');
 $routes->get('/admin/dashboard', 'Admin\Dashboard::index', ['filter' => 'auth']);
+$routes->get('/admin/cetak', 'Admin\Cetak::index');
+
 
 /*
  * --------------------------------------------------------------------

@@ -1,3 +1,6 @@
+v_tambahtamu
+
+
 <?= $this->extend('templates/t_dashboard'); ?>
 
 <?= $this->section('content'); ?>
@@ -21,9 +24,9 @@
             <?= $validation->getError('nama_penemu'); ?>
           </p>
           <label class="block text-gray-700 text-sm font-bold mb-2" for="nama_penemu">
-            Nama Penemu
+            Nama Admin
           </label>
-          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama_penemu" name="nama_penemu" type="text" placeholder="Masukkan nama penemu">
+          <input class="shadow appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none focus:shadow-outline" id="nama_penemu" name="nama_penemu" type="text" placeholder="Masukkan nama admin">
         </div>
         <div class="mb-4">
           <p class="text-red-600">

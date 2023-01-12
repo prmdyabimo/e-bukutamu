@@ -82,6 +82,8 @@ class TambahTamu extends BaseController
         $fileFoto->move('upload', $namaFoto);
       }
 
+      $status = 'CHECK-IN';
+
       $data = [
         'nama_tamu' => $this->request->getVar('nama_tamu'),
         'nama_penemu' => $this->request->getVar('nama_penemu'),
@@ -89,7 +91,8 @@ class TambahTamu extends BaseController
         'alamat_tamu' => $this->request->getVar('alamat_tamu'),
         'keperluan_tamu' => $this->request->getVar('keperluan_tamu'),
         'tanggal_kunjungan_tamu' => $this->request->getVar('tanggal_kunjungan_tamu'),
-        'foto' => $namaFoto
+        'foto' => $namaFoto,
+        'status' =>$status
       ];
 
       $tamuModel->save($data);
