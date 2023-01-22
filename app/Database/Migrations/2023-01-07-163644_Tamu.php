@@ -23,7 +23,7 @@ class Tamu extends Migration
                 'constraint' => 255
             ],
             'nomor_identitas_tamu' => [
-                'type' => 'INT',
+                'type' => 'VARCHAR',
                 'constraint' => 20
             ],
             'alamat_tamu' => [

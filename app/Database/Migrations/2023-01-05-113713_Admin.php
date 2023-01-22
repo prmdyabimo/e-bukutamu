@@ -23,7 +23,7 @@ class Admin extends Migration
                 'constraint' => 255
             ],
             'nomor_identitas_admin' => [
-                'type' => 'INT',
+                'type' => 'VARCHAR',
                 'constraint' => 20
             ],
             'nomor_telepon_admin' => [
